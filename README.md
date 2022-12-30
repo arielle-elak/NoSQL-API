@@ -1,1 +1,1 @@
-# NoSQL-Social-Network
+# NoSQL Social Network API
