@@ -22,10 +22,7 @@ const reactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      // Format timestamp using moment.js
-      get: (date) => {
-        if (date) return date.toISOString().split("T") [0];
-      },
+      get: (value) => value.toDateString(),
     },
   },
   {
