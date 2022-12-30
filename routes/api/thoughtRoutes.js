@@ -10,7 +10,7 @@ const {
   deleteThought,
   addReaction,
   deleteReaction,
-} = require("../../controllers");
+} = require("../../controllers/thoughtController");
 // TODO: Set up controller paths
 
 // ROOT /api/thoughts - GET all thoughts and and POST a new thought

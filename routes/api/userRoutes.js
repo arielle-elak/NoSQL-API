@@ -10,7 +10,7 @@ const {
   deleteUser,
   addFriend,
   deleteFriend,
-} = require("../../controllers");
+} = require("../../controllers/userController");
 // TODO: Set up controller paths
 
 // ROOT /api/users - GET all users and POST a new user
