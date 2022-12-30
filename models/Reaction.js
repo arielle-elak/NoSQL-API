@@ -1,6 +1,6 @@
 // Reaction SCHEMA (Sub schema for Thought Model)
 
-const { Schema, Types } = require("mongoose");
+const { Schema, Types, model } = require("mongoose");
 
 const dateFormat = require("../utils/dateFormat");
 
