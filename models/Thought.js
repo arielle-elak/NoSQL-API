@@ -17,6 +17,22 @@ const thoughtSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
+            // Format timestamp using moment.js
+            get: timestamp => dateFormat(timestamp)
         },
+        username: {
+            type: String,
+            required: true,
+        },
+        // Array of reactions from the Reaction model
+        reactions: // TODO
+            [],
+    },
+    {
+        toJSON: {
+            getters: true,
+            virtuals: true,
+        },
+        id: false,
     }
-)
+);
