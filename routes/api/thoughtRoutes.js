@@ -10,4 +10,9 @@ const {
 } = require("../../controllers");
 // TODO: Set up controller paths
 
+// ROOT /api/thoughts - GET all thoughts and and POST a new thought
+router.route('/')
+    .get(getAllThoughts)
+    .post(createThought);
+
 
