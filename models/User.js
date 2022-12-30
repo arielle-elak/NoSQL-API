@@ -18,7 +18,8 @@ const userSchema = new Schema(
             type: String,
             unique: true,
             required: true,
-            match: //TODO,
+            // Regex from https://gist.github.com/rupeshtiwari/acf770bfc85f3fe1f62a80b461abfc13
+            match: [/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, 'Please enter a valid email address.'],
         },
         thoughts: [
 
