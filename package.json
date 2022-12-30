@@ -1,5 +1,5 @@
 {
-    "name": "NoSQL API",
+    "name": "NoSQL-API",
     "version": "1.0.1",
     "description": "Mongoose API for social media",
     "main": "index.js",
