@@ -1,5 +1,7 @@
 // Index for DB Models
+const User = require('./User');
+const Reaction = require('./Reaction');
+const Thought = require('./Thought');
 
 
-
-module.exports = { };
+module.exports = { User, Reaction, Thought };
