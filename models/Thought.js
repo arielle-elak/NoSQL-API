@@ -17,7 +17,7 @@ const thoughtSchema = new Schema(
       type: Date,
       default: Date.now,
       // Format timestamp using moment.js
-      get: timestamp => toDateString(timestamp),
+      get: timestamp => dateFormat(timestamp),
     },
     username: {
       type: String,
