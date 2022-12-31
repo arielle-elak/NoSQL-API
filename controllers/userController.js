@@ -62,7 +62,8 @@ module.exports = {
             .status(404)
             .json({ message: `Sorry, no user with that ID was found.` });
         }
-        res.json(dbUserData);
+        // Find all thought id's associated to user and delete 
+        return Thought.deleteMany({ _id: { $in: dbUserData.thoughts } });
       })
       .then(() => {
         res.json({ message: `User was succesfully deleted.` });
